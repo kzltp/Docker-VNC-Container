@@ -39,7 +39,7 @@ docker pull kzltp/vncserver:12
 docker run -d -p 5902:5902 -p 2222:22  -p 6901:6901 kzltp/vncserver:12
 ```
 
-3. **Run Docker Container (Docker Compose)**:
+2. **Run Docker Container (Docker Compose)**:
    You can use Docker Compose to start the container easily. Here's a sample `docker-compose.yml` file:
 
    ```yaml
@@ -66,23 +66,23 @@ docker run -d -p 5902:5902 -p 2222:22  -p 6901:6901 kzltp/vncserver:12
    docker-compose up -d
    ```
 
-2. **Access the VNC**:
+3. **Access the VNC**:
    - **VNC Username**: `root`
    - **VNC Password**: `vncpassword`
    - **Port**: `5902`
   
      
-3. **Access the Headless VNC**:
+4. **Access the Headless VNC**:
    - **VNC Password**: `vncpassword`
    - **Port**: `6901`
    - **URL**: `http://localhost:6901/`
 
-4. **Access SSH**:
+5. **Access SSH**:
    - **SSH Username**: `root`
    - **SSH Password**: `rootpassword`
    - **Port**: `22`
 
-5. **Access the container** via a VNC client (e.g., **VNC Viewer** or **TigerVNC**) and SSH client (e.g., **PuTTY** or **Terminal**).
+6. **Access the container** via a VNC client (e.g., **VNC Viewer** or **TigerVNC**) and SSH client (e.g., **PuTTY** or **Terminal**).
 
 ---
 
