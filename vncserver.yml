@@ -2,7 +2,7 @@ version: '3'
 services:
   vncserver:
     container_name: vncserver
-    image: vncserver:12
+    image: kzltp/vncserver:12
     networks:
       - guacamole_network
     ports:
