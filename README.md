@@ -26,7 +26,7 @@ You can find the pre-built Docker image for this container on [Docker Hub](https
 Simply pull the image and run the container using the following command:
 
 ```bash
-docker pull kzltp/vncserver
+docker pull kzltp/vncserver:12
 ```
 
 ---
