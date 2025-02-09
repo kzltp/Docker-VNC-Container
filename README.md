@@ -33,7 +33,13 @@ docker pull kzltp/vncserver
 
 ## 📥 How to Use
 
-1. **Run Docker Container**:
+
+1. **Run Docker Container (Docker)**:
+ ```bash
+docker run -d -p 5902:5902 -p 2222:22  -p 6901:6901 kzltp/vncserver:12
+```
+
+3. **Run Docker Container (Docker Compose)**:
    You can use Docker Compose to start the container easily. Here's a sample `docker-compose.yml` file:
 
    ```yaml
@@ -47,6 +53,7 @@ docker pull kzltp/vncserver
        ports:
          - 5901:5901
          - 2222:22
+         - 6901:6901
    networks:
      guacamole_network:
        name: sandbox
@@ -63,13 +70,19 @@ docker pull kzltp/vncserver
    - **VNC Username**: `root`
    - **VNC Password**: `vncpassword`
    - **Port**: `5902`
+  
+     
+3. **Access the Headless VNC**:
+   - **VNC Password**: `vncpassword`
+   - **Port**: `6901`
+   - **URL**: `http://localhost:6901/`
 
-3. **Access SSH**:
+4. **Access SSH**:
    - **SSH Username**: `root`
    - **SSH Password**: `rootpassword`
    - **Port**: `22`
 
-4. **Access the container** via a VNC client (e.g., **VNC Viewer** or **TigerVNC**) and SSH client (e.g., **PuTTY** or **Terminal**).
+5. **Access the container** via a VNC client (e.g., **VNC Viewer** or **TigerVNC**) and SSH client (e.g., **PuTTY** or **Terminal**).
 
 ---
 
