@@ -38,7 +38,7 @@ docker pull kzltp/vncserver
    services:
      vncserver:
        container_name: vncserver
-       image: kzltp/vncserver
+       image: kzltp/vncserver:12
        networks:
          - guacamole_network
        ports:
