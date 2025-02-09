@@ -16,6 +16,9 @@ This is a Docker container that provides a **headless VNC server** with an **Xfc
 
 ---
 
+🛠️ Development
+This project is based on and inspired by the work done in the ConSol Docker Headless VNC Container repository. I have customized and extended the features to include more up-to-date browsers, additional tools, and other performance improvements.
+
 ## 📦 Ready-to-use Docker Image
 
 You can find the pre-built Docker image for this container on [Docker Hub](https://hub.docker.com/r/kzltp/vncserver).
