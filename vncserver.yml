@@ -1,0 +1,15 @@
+version: '3'
+services:
+  vncserver:
+    container_name: vncserver
+    image: vncserver:12
+    networks:
+      - guacamole_network
+    ports:
+      - 5901:5901
+      - 2222:22
+
+networks:
+  guacamole_network:
+    name: sandbox
+    driver: bridge
